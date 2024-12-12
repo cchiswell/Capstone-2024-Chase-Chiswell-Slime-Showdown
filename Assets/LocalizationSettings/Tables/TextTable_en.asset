@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TextTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 1b8a7480e055c3c468e760d0adad9d22, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2986757539767779330
+  m_TableData:
+  - m_Id: 80420052992
+    m_Localized: 'Stomach Capacity: {0}/{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 668205621248
+    m_Localized: 'Points: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 1838516395352064
+    m_Localized: 'Increases the speed of digestion. Level: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 1839990575767552
+    m_Localized: 'Increases your stomach capacity. Level: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 1840345636184064
+    m_Localized: Digestion Speed+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840423859953664
+    m_Localized: Stomach Capacity+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841243028496384
+    m_Localized: 'Increases the amount of points earned when digesting. Level: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 1841828880490496
+    m_Localized: Points+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1842116311949312
+    m_Localized: Press [B] to Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844015559909376
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1846165518196736
+    m_Localized: Press [B] to Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2602358230523904
+    m_Localized: 'Cost: {0}p'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 2607845760081920
+    m_Localized: 'Cost: {0}p'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 2622669130866688
+    m_Localized: 'Cost: {0}p'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 9418756005076992
+    m_Localized: Health Recovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9418938385997824
+    m_Localized: Fully recovers health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9419646803943424
+    m_Localized: 'Cost: {0}p'
+    m_Metadata:
+      m_Items:
+      - rid: 2986757539767779330
+  - m_Id: 9489400126283776
+    m_Localized: GAME OVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9489729530142720
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9490106325442560
+    m_Localized: Return to Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9903984347750400
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9904618270662656
+    m_Localized: How To Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12003386453434368
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12006178698076160
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12010595853836288
+    m_Localized: 'Welcome to Slime Showdown! This is a simple game where the goal
+      is to survive as long as possible and earn points to upgrade your character. 
+      Collect meat to fill up your stomach, and digest it to earn points! The more
+      food is in your stomach, the more points you''ll earn.
+
+
+      But watch out!
+      You aren''t the only hungry slime. Though the red slime mostly cares for meat,
+      he''ll chase after you if there''s none around.
+
+
+      How To Play:
+
+
+      WASD:
+      Move
+
+
+      E (Hold): Digest collected food
+
+
+      B: Open the shop menu'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12029003232223232
+    m_Localized: 'SLIME
+
+      SHOWDOWN'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2986757539767779330
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a068b91200000000a028949b00000000a0a8f41e88060000a0a8307689060000a0a8cc998a060000a0e8bdd43e090000a02868d243090000a0e8bd4d51090000a0a86d1e772100

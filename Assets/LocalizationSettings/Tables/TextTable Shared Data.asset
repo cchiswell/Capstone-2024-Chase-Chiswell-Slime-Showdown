@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TextTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TextTable
+  m_TableCollectionNameGuidString: 1b8a7480e055c3c468e760d0adad9d22
+  m_Entries:
+  - m_Id: 80420052992
+    m_Key: stomachCapacityTranslate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 668205621248
+    m_Key: pointsTranslate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1838516395352064
+    m_Key: digestSpeedDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1839990575767552
+    m_Key: capacityIncreaseDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840345636184064
+    m_Key: digestionButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840423859953664
+    m_Key: capacityButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841243028496384
+    m_Key: pointRateDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1841828880490496
+    m_Key: pointsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1842116311949312
+    m_Key: HUDShopText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844015559909376
+    m_Key: LangSet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1846165518196736
+    m_Key: ResumeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2602358230523904
+    m_Key: CapacityCostText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2607845760081920
+    m_Key: DigestSpeedCostText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2622669130866688
+    m_Key: PointBoostCostText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9418756005076992
+    m_Key: HealthButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9418938385997824
+    m_Key: HealthRecoverDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9419646803943424
+    m_Key: HealthRecoveryCost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9489400126283776
+    m_Key: GameOverText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9489729530142720
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9490106325442560
+    m_Key: ReturnToTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9903984347750400
+    m_Key: StartGameButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9904618270662656
+    m_Key: HowToPlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12003386453434368
+    m_Key: QuitGameButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12006178698076160
+    m_Key: ExitHowToPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12010595853836288
+    m_Key: AboutText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12029003232223232
+    m_Key: TitleText
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2986757537925955612
+  references:
+    version: 2
+    RefIds:
+    - rid: 2986757537925955612
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1730988581943
