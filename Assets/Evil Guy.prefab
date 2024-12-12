@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2509c5fd2d5f8f748a6131155908d631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12.5
+  speed: 10
   playerKnockbackForce: 7
   damage: 1
   pauseDuration: 2

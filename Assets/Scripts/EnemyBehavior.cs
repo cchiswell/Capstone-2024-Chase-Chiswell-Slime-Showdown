@@ -10,10 +10,12 @@ public class EnemyAI : MonoBehaviour
 
     public float pauseDuration = 2f;
     private bool isPaused = false;
-    Rigidbody rb;
+    private Rigidbody rb;
 
     private GameObject player;
     private List<GameObject> meatObjects = new List<GameObject>();
+
+    private Vector3 targetPosition;
 
     void Start()
     {
@@ -22,28 +24,28 @@ public class EnemyAI : MonoBehaviour
         UpdateMeatObjects();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        // Regularly update the list of meat objects
+        if (isPaused) return;
+
         UpdateMeatObjects();
 
-        if (!isPaused)
+        if (meatObjects.Count > 0)
         {
-            if (meatObjects.Count > 0)
+            // Chase the nearest meat object
+            GameObject nearestMeat = GetNearestMeat();
+            if (nearestMeat != null)
             {
-                // Chase the nearest meat object
-                GameObject nearestMeat = GetNearestMeat();
-                if (nearestMeat != null)
-                {
-                    MoveTowards(nearestMeat.transform.position);
-                }
-            }
-            else
-            {
-                // Chase the player if no meat exists
-                MoveTowards(player.transform.position);
+                targetPosition = nearestMeat.transform.position;
             }
         }
+        else
+        {
+            // Chase the player if no meat exists
+            targetPosition = player.transform.position;
+        }
+
+        MoveTowards(targetPosition);
     }
 
     void UpdateMeatObjects()
@@ -76,19 +78,21 @@ public class EnemyAI : MonoBehaviour
     void MoveTowards(Vector3 target)
     {
         // Calculate direction but ignore the y-axis
-        Vector3 direction = new Vector3(target.x - transform.position.x, 0, target.z - transform.position.z).normalized;
+        Vector3 direction = (new Vector3(target.x, transform.position.y, target.z) - transform.position).normalized;
 
-        // Move towards the target
-        transform.position += direction * speed * Time.deltaTime;
+        // Use Rigidbody for movement
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
 
-        // Rotate to face the target with the correct front alignment
-        Quaternion targetRotation = Quaternion.LookRotation(direction);
+        // Rotate to face the target smoothly
+        if (direction != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
 
-        // Adjust rotation if the forward vector of the enemy isn't the default `z`
-        targetRotation *= Quaternion.Euler(0, -90, 0); // Adjust this if your model's forward is aligned with `x`
+            // Adjust rotation if the forward vector of the enemy isn't the default `z`
+            targetRotation *= Quaternion.Euler(0, -90, 0); // Adjust if the model's forward is aligned differently
 
-        // Smoothly rotate to the target
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * speed);
+            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, speed * Time.fixedDeltaTime);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
