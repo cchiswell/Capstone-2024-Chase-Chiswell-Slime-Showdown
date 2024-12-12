@@ -30,6 +30,7 @@ public class GameOverManager : MonoBehaviour
         // Stop the game
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         playerMovement.enabled = false;
         gameOverCanvas.SetActive(true);
         regularUICanvas.SetActive(false);
@@ -48,6 +49,7 @@ public class GameOverManager : MonoBehaviour
         isGameOver = true;
         Time.timeScale = 1f; // Ensure time is resumed
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
